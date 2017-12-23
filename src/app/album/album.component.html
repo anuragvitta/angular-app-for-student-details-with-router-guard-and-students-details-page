@@ -1,0 +1,10 @@
+
+  <input type="text" #show>
+  <button (click)="display(show.value)">click</button>
+  <div *ngFor="let a of albums" >
+  <img src={{a.thumbnailUrl}} (click)="displayimage(a.url)"/>
+</div>
+<div *ngIf="x">
+<img src={{x}}/>
+</div>
+

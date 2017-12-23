@@ -1,0 +1,27 @@
+{
+"aspirant1":{
+	               "name":"anurag",
+                   "branch":"cse",
+                   "favlang":"java"
+	},
+"aspirant2":{
+	              "name":"hell",
+                  "branch":"cse",
+                  "favlang":"java"
+	},
+"aspirant3":{
+	            "name":"king",
+                  "branch":"cse",
+                  "favlang":"java"
+	},
+"aspirant4":{
+	            "name":"keee",
+                  "branch":"cse",
+                  "favlang":"java"
+	},
+"aspirant5":{
+	              "name":"miller",
+                  "branch":"cse",
+                  "favlang":"java"
+	}
+}

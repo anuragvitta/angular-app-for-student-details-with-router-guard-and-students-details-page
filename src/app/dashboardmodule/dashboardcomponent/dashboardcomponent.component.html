@@ -1,0 +1,31 @@
+<div class="card a" style="width: 80rem" >
+  <div class="card-body" style="background-color:#ffffff;">
+<div style="padding:10px;">
+      <div class="input-group col-lg-12">
+          <span class="input-group-addon" id="basic-addon1">Filter By..</span>
+          <input type="text" class="form-control" [(ngModel)]="searchText" placeholder="Enter name" aria-label="Enter name" aria-describedby="basic-addon1">
+        </div>
+        <br>
+<table *ngIf="aspirants" class="table">
+  <thead class="thead-dark">
+  <tr>
+    <th>Names</th>
+    <th >Branch</th>
+    <th >Fav.Language</th>
+    <th>Percentage</th>
+    <th>Join Date</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let a of aspirants | filter:searchText">
+    <td><a class="btn btn-link" [routerLink]="['/details',a.id]" role="button">{{a.name | uppercase}}</a></td>
+    <td >{{a.branch}}</td>
+    <td >{{a.favlang}}</td>
+    <td ><button type="button" class="btn btn-primary" appMyhighlighter [value]="a.percentage" (click)="genalert(a.percentage)">{{a.percentage}}</button></td>
+    <td >{{a.joindate | date:'fullDate'}}</td>
+  </tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
